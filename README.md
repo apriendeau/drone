@@ -249,6 +249,7 @@ Authorization callback URL for GitHub Enterprise:
 
 ```
 http://localhost:8000/api/auth/enterprise.github.com
+```
 
 ## Stash
 
@@ -281,7 +282,7 @@ openssl rsa -in stash.pem -pubout -out stash.pub
 Set up the application link as a Stash Administrator with the following parameters:
 
 Application:
-```
+
 http://localhost:8000
 ```
 
@@ -300,7 +301,7 @@ Consumer Name: Drone
 Public Key: text from stash.pub generated above
 
 Customize drone.toml with the appropriate URL:port for stash (7990) and stash git (7999)
-
+```
 ```
 [stash]
 url = "http://localhost:7990"
